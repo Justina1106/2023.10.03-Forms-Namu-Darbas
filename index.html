@@ -35,6 +35,55 @@
             <label for="email">Enter your email:</label>  
             <input type="email" name="email" id="email" required />
         </div>    
+
+        <div class="form-control">
+            <input type="range" id="range" name="volume" min="0" max="11" />
+            <label for="range">Range</label>
+        </div>
+
+        <fieldset>
+            <legend>Select a group number:</legend>
+          
+            <div>
+              <input type="radio" id="FEUA-gr" name="drone" value="FEUA-1gr" checked />
+              <label for="FEUA-1gr">FEUA 1gr</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="FEUA-gr" name="drone" value="FEUA-2gr" />
+              <label for="FEUA-2gr">FEUA 2gr</label>
+            </div>
+          
+            <div>
+              <input type="radio" id="FEUA-gr" name="drone" value="FEUA-3gr" />
+              <label for="FEUA-3gr">FEUA 3gr</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Choose your IT languages:</legend>
+          
+            <div>
+              <input type="checkbox" id="Scratch" name="Scratch" checked />
+              <label for="Scratch">Scratch</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="Blockly" name="Blockly" />
+              <label for="Blockly">Blockly</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Alice" name="Alice" />
+                <label for="Alice">Alice</label>
+              </div>
+
+            <div>
+                <input type="checkbox" id="Twine" name="Twine" />
+                <label for="Twine">Twine</label>
+            </div>
+
+          </fieldset>
     
        
         <input type="submit" value="Register">
