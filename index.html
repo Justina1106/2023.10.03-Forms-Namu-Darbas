@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts-Form</title>
+</head>
+<body>
+    <form>
+        <div class="form-control">
+          <label for="person-name">Enter your name:</label>
+          <input type="text" id="person-name" name="p-name" required />
+          <span class="validity"></span>
+        </div>
+
+        <div class="form-control">
+            <label for="person-suename">Enter your surname:</label>
+            <input type="text" id="person-surname" name="p-surname" required />
+            <span class="validity"></span>
+          </div>
+    
+        <div class="form-control">
+          <label for="person-age">Enter your age:</label>
+          <input type="number" name="p-age" id="person-age" required />
+          <span class="validity"></span>
+        </div>
+    
+        <div class="form-control">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{5}">
+            <small>Format: 370-695-21574</small>
+          </div>
+
+        <div class="form-control">
+            <label for="email">Enter your email:</label>  
+            <input type="email" name="email" id="email" required />
+        </div>    
+    
+       
+        <input type="submit" value="Register">
+      </form>
+    
+      <div id="content"></div>
+    
+      <script src="script.js"></script>
+    
+</body>
+</html>
