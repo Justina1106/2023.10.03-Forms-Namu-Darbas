@@ -8,8 +8,7 @@ form.addEventListener('submit', function(event) {
   // let personName = event.target.querySelector('#person-name').value
 
   let formElement = event.target
-  // let personName = formElement.elements['person-name'].value
-  // let personName = formElement['person-name'].value
+  
   let personName = formElement.querySelector('#person-name').value
 
   let personSurname = formElement.querySelector('#person-surname').value
@@ -20,7 +19,9 @@ form.addEventListener('submit', function(event) {
 
   let email = formElement.querySelector('#email').value
 
-  let FEUAgr = formElement.querySelector('#FEUA-gr').value
+  let FEUAgr = formElement.querySelector('#drone').value
+
+  let volume = formElement.querySelector('#volume').value
 
   console.log(personName)
   console.log(personSurname)
@@ -28,6 +29,7 @@ form.addEventListener('submit', function(event) {
   console.log(phone)
   console.log(email)
   console.log(FEUAgr)
+  console.log(volume)
 
   let infoWrapper = document.createElement('div')
   infoWrapper.innerHTML = `<h2>${personName}</h2>
